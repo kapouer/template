@@ -206,24 +206,6 @@
       return el;
     };
 
-    var escapeDataRegExp = /[&\u00A0<>]/g;
-
-    function escapeReplace(c) {
-      switch (c) {
-        case '&':
-          return '&amp;';
-        case '<':
-          return '&lt;';
-        case '>':
-          return '&gt;';
-        case '\u00A0':
-          return '&nbsp;';
-      }
-    }
-
-    function escapeData(s) {
-      return s.replace(escapeDataRegExp, escapeReplace);
-    }
   }
 
   // make cloning/importing work!
