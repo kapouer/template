@@ -113,6 +113,7 @@
           try {
             defineInnerHTML(template);
           } catch (err) {
+            console.error("template.innerHTML cannot be polyfilled", err);
             canDecorate = false;
           }
         }
